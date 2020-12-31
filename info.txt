@@ -1,1 +1,9 @@
- 
+1. Po imporcie usuń
+a) gradle -  wraper
+b) gradlew
+c) gradle.bat
+2. Przestaw w  IJ
+Settings->Build, Executions ... ->build tools -> Gradle
+a) Aby IJ odpalał sam testy i pliki bez delegowania do gradla
+b) Scieżkę do istniejącego gradla
+3. Zmien nazwe artefaktu i projektu w plikach konfiguracyjnych gradla
