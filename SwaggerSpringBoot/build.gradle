@@ -4,9 +4,6 @@ plugins {
 	id 'java'
 }
 
-group = 'org.czirman'
-version = '0.0.1-SNAPSHOT'
-
 apply from: 'dependiences.gradle'
 
 repositories {
