@@ -7,8 +7,6 @@ apply from: 'dependencies.gradle'
 group 'org.unknown'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
