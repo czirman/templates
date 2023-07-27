@@ -1,6 +1,9 @@
 plugins {
     id 'java'
 }
+test {
+    useJUnitPlatform()
+}
 
 apply from: 'dependencies.gradle'
 
