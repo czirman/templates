@@ -1,5 +1,4 @@
 ext {
-    lombok_version    = "1.18.30"
     h2_version        = "2.2.220"
     groovy_version    = "4.0.21"
     spock_version     = "2.4-M1-groovy-4.0"
@@ -32,9 +31,4 @@ dependencies {
     // Objenesis dla mockowania final classes
     testImplementation "org.objenesis:objenesis:${objenesis_version}"
 
-    // Lombok
-    compileOnly "org.projectlombok:lombok:${lombok_version}"
-    annotationProcessor "org.projectlombok:lombok:${lombok_version}"
-    testCompileOnly "org.projectlombok:lombok:${lombok_version}"
-    testAnnotationProcessor "org.projectlombok:lombok:${lombok_version}"
 }
