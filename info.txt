@@ -7,3 +7,8 @@
 
 3. Zmien nazwe artefaktu i projektu w pliku settings.gradle
 
+4. Ustaw wersję java
+    - w projekcie na 17 (najwyższa która wspiera gradle 9)
+    - w settingsach IJ gradla
+
+

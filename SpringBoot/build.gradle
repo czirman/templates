@@ -1,15 +1,26 @@
 plugins {
-	id 'org.springframework.boot' version '3.0.6'
-	id 'io.spring.dependency-management' version '1.1.0'
 	id 'java'
+	id 'groovy'
+	id 'org.springframework.boot' version '3.3.5'
+	id 'io.spring.dependency-management' version '1.1.5'
+	id 'io.freefair.lombok' version '8.12.1'
 }
 
-apply from: 'dependiences.gradle'
+// Załaduj zależności
+apply from: 'dependencies.gradle'
+
+// Java toolchain
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+// Testy uruchamiane na JUnit Platform (Spock działa na tej platformie)
+test {
+	useJUnitPlatform()
+}
 
 repositories {
 	mavenCentral()
-}
-
-test {
-	useJUnitPlatform()
 }
