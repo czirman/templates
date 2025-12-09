@@ -11,5 +11,9 @@
     - w projekcie na 20 (najwyższa która wspiera gradle 9)
     - w settingsach IJ gradla
     - w skrypcie
+5. Jak chcesz h2 do uruchamiaj z profilem h2 i dodaj zależność
+    // H2 tylko runtime
+    runtimeOnly "com.h2database:h2:${h2_version}"
+    h2_version        = "2.2.220"
 
 

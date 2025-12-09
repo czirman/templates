@@ -19,7 +19,3 @@ spring:
 
 
 
-    // H2 tylko runtime
-    runtimeOnly "com.h2database:h2:${h2_version}"
-    
-    h2_version        = "2.2.220"
