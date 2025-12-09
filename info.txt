@@ -2,8 +2,9 @@
     a) gradle -  wraper
     b) gradlew
     c) gradle.bat
-2. Uruchamiaj z Gradle -> task -> applicatio -> bootRun
-    a) Settings->Build, Executions ... ->build tools -> INTELIJ IDEA
+2. Uruchamienie z Gradle -> task -> applicatio -> bootRun
+    a) Najlepiej uruchamiaj poprzez gradle
+    b) A jak chces z IJ to przestaw Settings->Build, Executions ... ->build tools -> INTELIJ IDEA
 3. Zmien nazwe artefaktu i projektu w pliku settings.gradle
 
 4. Ustaw wersję java
