@@ -1,9 +1,10 @@
 plugins {
 	id 'java'
 	id 'groovy'
-	id 'org.springframework.boot' version '3.3.5'
-	id 'io.spring.dependency-management' version '1.1.5'
+	id 'org.springframework.boot' version '3.5.6'
+	id 'io.spring.dependency-management' version '1.1.7'
 	id 'io.freefair.lombok' version '8.12.1'
+	id 'org.liquibase.gradle' version '2.1.1'
 }
 
 // Załaduj zależności
@@ -12,7 +13,7 @@ apply from: 'dependencies.gradle'
 // Java toolchain
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
+		languageVersion = JavaLanguageVersion.of(20)
 	}
 }
 
@@ -24,3 +25,4 @@ test {
 repositories {
 	mavenCentral()
 }
+

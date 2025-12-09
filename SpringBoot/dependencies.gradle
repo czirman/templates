@@ -1,5 +1,5 @@
 ext {
-    h2_version        = "2.2.220"
+
     groovy_version    = "4.0.21"
     spock_version     = "2.4-M1-groovy-4.0"
     objenesis_version = "3.3"
@@ -11,8 +11,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // H2 tylko runtime
-    runtimeOnly "com.h2database:h2:${h2_version}"
+    // db
+    implementation 'org.postgresql:postgresql:42.7.3'
 
     // ===== TESTY =====
     // Spring Boot test framework
@@ -30,5 +30,9 @@ dependencies {
 
     // Objenesis dla mockowania final classes
     testImplementation "org.objenesis:objenesis:${objenesis_version}"
+
+
+    // Liquibase
+    implementation 'org.liquibase:liquibase-core:4.27.0'
 
 }
