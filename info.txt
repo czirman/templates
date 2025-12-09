@@ -2,13 +2,13 @@
     a) gradle -  wraper
     b) gradlew
     c) gradle.bat
-2. Przestaw w  IJ na
+2. Uruchamiaj z Gradle -> task -> applicatio -> bootRun
     a) Settings->Build, Executions ... ->build tools -> INTELIJ IDEA
-
 3. Zmien nazwe artefaktu i projektu w pliku settings.gradle
 
 4. Ustaw wersję java
-    - w projekcie na 17 (najwyższa która wspiera gradle 9)
+    - w projekcie na 20 (najwyższa która wspiera gradle 9)
     - w settingsach IJ gradla
+    - w skrypcie
 
 
